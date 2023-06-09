@@ -41,12 +41,12 @@ cd ..
 
 #======================= Variant Calling steps =======================
 # Directories
-ref="/mnt/c/Users/angel/Desktop/Rthings/Bioinformagician/GATK/supporting_files/hg38.fa"
-known_sites="/mnt/c/Users/angel/Desktop/Rthings/Bioinformagician/GATK/supporting_files/Homo_sapiens_assembly38.dbsnp138.vcf"
-aligned_reads="/mnt/c/Users/angel/Desktop/Rthings/Bioinformagician/GATK/aligned_reads"
-reads="/mnt/c/Users/angel/Desktop/Rthings/Bioinformagician/GATK/reads" 
-results="/mnt/c/Users/angel/Desktop/Rthings/Bioinformagician/GATK/results"
-data="/mnt/c/Users/angel/Desktop/Rthings/Bioinformagician/GATK/data"
+ref="/mnt/c/Users/angel/Desktop/Rthings/GATK/supporting_files/hg38.fa"
+known_sites="/mnt/c/Users/angel/Desktop/Rthings/GATK/supporting_files/Homo_sapiens_assembly38.dbsnp138.vcf"
+aligned_reads="/mnt/c/Users/angel/Desktop/Rthings/GATK/aligned_reads"
+reads="/mnt/c/Users/angel/Desktop/Rthings/GATK/reads" 
+results="/mnt/c/Users/angel/Desktop/Rthings/GATK/results"
+data="/mnt/c/Users/angel/Desktop/Rthings/GATK/data"
 
 # -----------------------
 # STEP 1: QC - Run FastQC
@@ -108,6 +108,3 @@ gatk HaplotypeCaller -R ${ref} -I ${aligned_reads}/SRR062634._sorted_dedup_bqsr_
 
 gatk SelectVariants -R ${ref} -V ${results}/raw_variants.vcf --select-type SNP -O ${results}/raw_snps.vcf
 gatk SelectVariants -R ${ref} -V ${results}/raw_variants.vcf --select-type INDEL -O ${results}/raw_indels.vcf
-
-
-
