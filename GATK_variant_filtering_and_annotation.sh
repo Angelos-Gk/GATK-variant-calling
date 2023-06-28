@@ -3,8 +3,8 @@
 # This is a script to filter and annotate variants (continuation from GATK_variant_calling.sh)
 
 #Directories 
-ref="/mnt/c/Users/angel/Desktop/Rthings/Bioinformagician/GATK/supporting_files/hg38.fa"
-results="/mnt/c/Users/angel/Desktop/Rthings/Bioinformagician/GATK/results"
+ref="/mnt/c/Users/angel/Desktop/Rthings/GATK/supporting_files/hg38.fa"
+results="/mnt/c/Users/angel/Desktop/Rthings/GATK/results"
 
 # -----------------------
 # Filter Variants - GATK4
